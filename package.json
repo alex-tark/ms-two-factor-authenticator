@@ -1,0 +1,31 @@
+{
+  "name": "2af-totp",
+  "version": "1.0.0",
+  "description": "Time based one time password authorization service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "preparecommitmsg": "./node_modules/@makeomatic/deploy/git-hooks/prepare-commit-msg $GIT_PARAMS"
+  },
+  "keywords": [],
+  "author": "zinin.alexander21@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@microfleet/core": "^10.2.4",
+    "assert": "^1.4.1",
+    "ioredis": "^3.2.2",
+    "lodash": "^4.17.5",
+    "ms-conf": "^3.2.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@makeomatic/deploy": "^5.2.1",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.17.0",
+    "eslint-config-makeomatic": "^2.0.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-promise": "^3.6.0"
+  }
+}
